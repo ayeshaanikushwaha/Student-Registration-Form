@@ -1,0 +1,13 @@
+{
+  "name": "student-registration-root",
+  "version": "1.0.0",
+  "description": "Root configuration to run both frontend and backend concurrently",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run dev --prefix frontend\"",
+    "backend": "npm run start --prefix backend",
+    "frontend": "npm run dev --prefix frontend"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
